@@ -1,0 +1,11 @@
+$bgColor: rgb(60, 85, 115);
+$color: rgb(168, 175, 183);
+$fontSize: 5rem;
+
+body {
+    .button {
+        background-color: $bgColor;
+        color: $color;
+        font-size: $fontSize;
+    }
+}
