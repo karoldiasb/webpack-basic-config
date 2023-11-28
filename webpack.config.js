@@ -31,7 +31,11 @@ module.exports = {
                         'plugins': ['@babel/plugin-transform-arrow-functions']
                     }
                 }
-            }
+            },
+            {
+                test: /\.html$/,
+                use: ['html-loader']
+            },
         ]
     }
 }
