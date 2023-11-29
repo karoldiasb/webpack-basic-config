@@ -19,3 +19,5 @@ console.log('double', double);
 
 const body = document.querySelector('body');
 body.innerHTML += Error;
+
+console.log(process.env.API_KEY);
