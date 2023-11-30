@@ -11,6 +11,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     mode: 'development',
+    devServer: {
+        static: path.join(__dirname, 'src/'),
+        port: 3000,
+    },
     module: {
         rules: [
             {
@@ -48,6 +52,9 @@ module.exports = {
             filename: '[name].[contenthash].css'
         }),
         new DotenvPlugin(),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            title: 'webpack basic app'
+        })
     ]
 }
